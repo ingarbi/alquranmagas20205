@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Fractal by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- Подключаем Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .hover-scale {
+                @apply transition-all duration-300 ease-in-out hover:scale-[1.02];
+            }
+            .click-effect {
+                @apply transition-colors duration-300;
+            }
+        }
+    </style>
+</head>
+    
+<body class="font-sans bg-gray-50 p-4">
+    <!-- Первая секция - горизонтальная -->
+    <section class="flex flex-row gap-5 my-5 p-4 border border-gray-300 bg-gray-100 rounded-lg">
+         <!-- Левый блок (70%) - вертикальный -->
+         <div class="w-[30%] flex flex-col gap-3">
+            <article class="p-3 bg-gray-200 rounded hover-scale click-effect"><img src="images/01.jpg" alt=""> </article>
+            <article class="flex flex-row gap-2 p-3 bg-gray-200 rounded hover-scale click-effect">Al Quran Magas</article>
+        </div>
+        
+        
+        <!-- Правый блок (30%) - вертикальный -->
+        <div class="w-[70%] flex flex-col gap-3">
+            <article class="flex flex-row gap-2 p-3 bg-gray-200 rounded hover-scale click-effect">II international Competition of Reciters of the Holy Quran</article>
+            <article class="flex flex-row gap-2 p-3 bg-gray-200 rounded hover-scale click-effect">In memory of the first Mufti of Ingushetia Evloev Sulumbek Shakhbotovich</article>
+            <article class="flex flex-row gap-2 p-3 bg-gray-200 rounded hover-scale click-effect">16-18 august 2025.
+                <li>Republic of Ingushetia. Magas 2 categories: Hifz and Qiraat</li>
+            </article>
+        </div>
+        
+       
+    </section>
+
+    <!-- Вторая секция - горизонтальная -->
+    <section class="flex flex-row my-5 p-4 border border-gray-300 bg-gray-100 rounded-lg">
+        <div class="flex flex-row gap-2 p-3 bg-gray-200 rounded hover-scale click-effect">Charity fund "Vochal"(Bratherhood) together with the Ministry of External Relations, National Policy, Press and Information of the Republic of Ingushetia</div>
+    </section>
+
+    <!-- Третья секция - горизонтальная -->
+    <section class="flex flex-row gap-5 my-5 p-4 border border-gray-300 bg-gray-100 rounded-lg">
+        <!-- Первый вертикальный блок -->
+        <div class="flex flex-col gap-3 flex-1">
+            <article class="flex flex-row gap-2 p-3 bg-gray-200 rounded hover-scale click-effect">
+                International Holy Quran Award 
+                <a 
+                  href="https://docs.google.com/forms/ваша_форма" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="text-blue-600 hover:text-blue-800 underline font-medium"
+                >
+                  Registration Form
+                </a>
+              </article>
+            <article class="flex flex-row gap-2 p-3 bg-gray-200 rounded hover-scale click-effect">Contact details: Russia. Republic Ingushetia, Magas. </details></article>
+        </div>
+        
+        <!-- Второй вертикальный блок -->
+        <div class="flex flex-col gap-3 flex-1">
+            <a
+                href="/assets/pdf/01.pdf"
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="flex flex-row gap-2 p-3 bg-gray-200 rounded hover-scale click-effect no-underline hover:no-underline">
+                All details about the competition. Rules and procedure for its implementation.
+            </a>
+            <article class="flex flex-col gap-2 p-3 bg-gray-200 rounded hover-scale click-effect">
+                <div>
+                  <span>Contact Us: </span>
+                  <a href="tel:+79880882075" class="text-blue-600 hover:text-blue-800 hover:underline">
+                    +7 (988) 088-20-75
+                  </a>
+                </div>
+                <div>
+                  <span>Email: </span>
+                  <a href="mailto:info@alquranmagas.ru" class="text-blue-600 hover:text-blue-800 hover:underline">
+                    info@alquranmagas.ru
+                  </a>
+                </div>
+              </article>
+                <ul class="icons flex space-x-4">
+                    <li>
+                        <a href="https://wa.me/79880882075" 
+                           class="icon-wrapper bg-green-500 hover:bg-green-600 text-white rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-md">
+                            <i class="fab fa-whatsapp fa-lg"></i>
+                            <span class="tooltip">WhatsApp: +7988 088 2075</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" 
+                           class="icon-wrapper bg-blue-400 hover:bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-md">
+                            <i class="fab fa-youtube fa-lg"></i>
+                            <span class="tooltip">YouTube</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" 
+                           class="icon-wrapper bg-pink-600 hover:bg-pink-700 text-white rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-md">
+                            <i class="fab fa-instagram fa-lg"></i>
+                            <span class="tooltip">Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+                <style>
+                    .icon-wrapper {
+                        position: relative;
+                    }
+                    .tooltip {
+                        position: absolute;
+                        bottom: -30px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: rgba(0,0,0,0.8);
+                        color: white;
+                        padding: 4px 8px;
+                        border-radius: 4px;
+                        font-size: 12px;
+                        white-space: nowrap;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all 0.3s ease;
+                    }
+                    .icon-wrapper:hover .tooltip {
+                        opacity: 1;
+                        visibility: visible;
+                        bottom: -40px;
+                    }
+                </style>
+                
+                <!-- Подключаем Font Awesome -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        </div>
+    </section>
+
+    <script>
+        // Добавляем интерактивности
+        document.addEventListener('DOMContentLoaded', function() {
+            const articles = document.querySelectorAll('article');
+            
+            articles.forEach(article => {
+                article.addEventListener('click', function() {
+                    this.classList.toggle('bg-gray-300');
+                    setTimeout(() => {
+                        this.classList.toggle('bg-gray-300');
+                    }, 300);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
