@@ -10,27 +10,32 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700;800;900&family=Big+Shoulders+Text:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-     
-     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'messiri': ['El Messiri', 'sans-serif'],
-                        'intro': ['Intro Book', 'sans-serif'],
-                        'big-shoulders': ['Big Shoulders Text', 'sans-serif']
-                    },
-                    colors: {
-                        islamic: {
-                            green: '#046A38',
-                            gold: '#D4AF37',
-                            blue: '#005F6B'
-                        }
-                    }
-                }
-            }
-        }
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700;800;900&family=Big+Shoulders+Text:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/intro-black" rel="stylesheet" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              messiri: ["El Messiri", "sans-serif"],
+              intro: ["Intro Book", "sans-serif"],
+              "big-shoulders": ["Big Shoulders Text", "sans-serif"],
+              "intro-book": ["Intro Book", "sans-serif"],
+            },
+            colors: {
+              islamic: {
+                green: "#046A38",
+                gold: "#D4AF37",
+                blue: "#005F6B",
+              },
+            },
+          },
+        },
+      };
     </script>
   </head>
   <body>
@@ -44,14 +49,31 @@
             alt="AlQuran Magas Logo"
             class="w-32 h-42 mb-4"
           />
-          <h2 class="font-messiri font-bold text-2xl ">Al Quran Magas</h2>
+          <h2 class="font-messiri font-bold text-2xl">Al Quran Magas</h2>
         </div>
         <div class="w-2/3">
-          <div class="font-messiri font-bold text-4xl"> II International Competition of Reciters of The Holy Quran</div>
-          <div class="font-messiri font-normal text-2xl my-1"> In memory of the first Mufti of Ingushetia <br> Evloev Sulumbek Shakhbotovich</div>
-          <div class="flex flex-row">
-            <h1 class="font-big-shoulders font-black text-7xl text-[#50d71e]">16-18</h1>
-            <h2>august 2025</h2>
+          <div class="font-messiri font-bold text-4xl">
+            II International Competition of Reciters of The Holy Quran
+          </div>
+          <div class="font-messiri font-normal text-2xl tracking-wide my-1">
+            In memory of the first Mufti of Ingushetia <br />
+            Evloev Sulumbek Shakhbotovich
+          </div>
+          <div class="flex flex-row py-8 text-center">
+            <h1
+              class="font-big-shoulders font-black text-7xl text-[#442507] text-end mr-2"
+            >
+              16-18
+            </h1>
+            <h1
+              class="font-intro-book font-semibold  text-[#5b4433]  tracking-[.25em] mr-2"
+            >
+              AUGUST <br />
+              <span
+                class="font-big-shoulders font-black text-5xl text-[#442507] tracking-normal text-end"
+                >2025</span
+              >
+            </h1>
             <h2>Place where it will, Moscow and etc</h2>
           </div>
         </div>
