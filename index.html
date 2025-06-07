@@ -5,13 +5,71 @@
     <title>AlQuran Magas 2025</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/main.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700;800;900&family=Big+Shoulders+Text:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+     
+     <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'messiri': ['El Messiri', 'sans-serif'],
+                        'intro': ['Intro Book', 'sans-serif'],
+                        'big-shoulders': ['Big Shoulders Text', 'sans-serif']
+                    },
+                    colors: {
+                        islamic: {
+                            green: '#046A38',
+                            gold: '#D4AF37',
+                            blue: '#005F6B'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
   </head>
-  <body >
-    <div class="header"></div>
-    
-    </div>
+  <body>
+    <main
+      class="max-w-6xl mx-auto bg-[url(/images/BGimage.png)] bg-contain bg-no-repeat min-h-screen flex flex-col sm:px-6 lg:px-8"
+    >
+      <section class="flex flex-row justify-evenly space-x-10 py-16 px-8">
+        <div class="flex flex-col justify-center items-center">
+          <img
+            src="/images/logo.png"
+            alt="AlQuran Magas Logo"
+            class="w-32 h-42 mb-4"
+          />
+          <h2 class="font-messiri font-bold text-2xl ">Al Quran Magas</h2>
+        </div>
+        <div class="w-2/3">
+          <div class="font-messiri font-bold text-4xl"> II International Competition of Reciters of The Holy Quran</div>
+          <div class="font-messiri font-normal text-2xl my-1"> In memory of the first Mufti of Ingushetia <br> Evloev Sulumbek Shakhbotovich</div>
+          <div class="flex flex-row">
+            <h1 class="font-big-shoulders font-black text-7xl text-[#50d71e]">16-18</h1>
+            <h2>august 2025</h2>
+            <h2>Place where it will, Moscow and etc</h2>
+          </div>
+        </div>
+      </section>
+      <section>
+        <p>here will 2 sentence taking all width</p>
+      </section>
+      <section>
+        <div>
+          <h5>text 5-6 words</h5>
+          <h5>here text 5-6 words</h5>
+        </div>
+        <div>
+          <h5>text 5-6 words</h5>
+          <p>contact us and etc....:</p>
+        </div>
+      </section>
+    </main>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
