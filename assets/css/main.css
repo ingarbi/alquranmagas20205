@@ -1,5 +1,5 @@
-/* html, body {
-  height: 100%;
+html, body {
+  height: 100vh;
 }
 body {
    font-family: Arial, sans-serif;
@@ -7,5 +7,5 @@ body {
    padding: 0;
    background: linear-gradient(to bottom right, #f2e9de, #c7b9a3);
    color: #333;
-} */
+}
 
