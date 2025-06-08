@@ -25,6 +25,7 @@
               intro: ["Intro Book", "sans-serif"],
               "big-shoulders": ["Big Shoulders Text", "sans-serif"],
               "intro-book": ["Intro Book", "sans-serif"],
+              "intro-black": ["Intro Black", "sans-serif"],
             },
           },
         },
@@ -32,17 +33,23 @@
     </script>
   </head>
   <body>
+    <div
+      class="absolute top-[285px] right-[190px] bg-[#442507]/70 rounded-l-xl align-center h-16 w-[516px] z-1"
+    ></div>
+
     <main
-      class="max-w-6xl mx-auto bg-[url(/images/BGimage.png)] bg-contain bg-no-repeat min-h-screen flex flex-col sm:px-6 lg:px-8"
+      class="max-w-6xl mx-auto bg-[url(/images/BGimage.png)] bg-contain bg-no-repeat min-h-screen flex flex-col sm:px-6 lg:px-8 my-8"
     >
-      <section class="flex flex-row justify-evenly space-x-10 py-16 px-8">
+      <section class="flex flex-row justify-evenly space-x-10 pt-16 px-8">
         <div class="flex flex-col justify-center items-center">
           <img
             src="/images/logo.png"
             alt="AlQuran Magas Logo"
             class="w-32 h-42 mb-4"
           />
-          <h2 class="font-messiri font-bold text-2xl">Al Quran Magas</h2>
+          <h2 class="font-messiri font-bold text-2xl text-[#342a1f]">
+            Al Quran Magas
+          </h2>
         </div>
         <div class="w-2/3">
           <div class="font-messiri font-bold text-4xl">
@@ -60,7 +67,7 @@
               16-18
             </h1>
             <h1
-              class="font-intro-book font-semibold text-[#5b4433] tracking-[.25em] mr-2"
+              class="font-intro-book font-semibold text-[#5b4433] tracking-[.25em] mr-3"
             >
               AUGUST <br />
               <span
@@ -68,28 +75,53 @@
                 >2025</span
               >
             </h1>
-            <div
-              class="bg-[#442507]/90 "
-            >
-              <p class="font-intro-book font-light text-left text-white">
+            <div class="mb-2 relative z-3">
+              <p
+                class="font-intro-book font-normal text-left text-[#f5efe2] text-lg leading-5 ml-2 p-2 z-3"
+              >
                 Republic of Ingushetia, Magas <br />2 categories:
-                <span>Hifz and Qiraat</span>
+                <span class="text-white underline">Hifz and Qiraat</span>
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <p>here will 2 sentence taking all width</p>
+      <section class="flex flex-row">
+        <p
+          class="font-intro-book ml-[4.0em] font-semibold text-[#432f24] leading-5 tracking-wider text-xl"
+        >
+          Charity fund "Vochal" (Brotherhood) together with the Ministry of
+          External Relations,<br />
+          National Policy, Press and Information of the Republic of Ingushetia.
+        </p>
       </section>
       <section>
-        <div>
-          <h5>text 5-6 words</h5>
-          <h5>here text 5-6 words</h5>
+        <div class="flex flex-row justify-center w-3xs space-x-24 mt-10">
+          <button
+            class="bg-[#432f24] font-intro-book font-normal tracking-wide text-[#f6ead7] rounded-2xl p-3 text-left text-lg outline outline-2 outline-offset-[-5px] outline-[#f6ead7]"
+          >
+            International Holy Quran Award<br /><span class="text-[#d4a46b]"
+              >Registration Form</span
+            >
+          </button>
+          <button
+            class="bg-[#432f24] font-intro-book font-normal tracking-wider text-[#f6ead7] rounded-2xl p-3 text-left text-sm outline outline-2 outline-offset-[-5px] outline-[#f6ead7] pr-16"
+          >
+            All details about the competition.<br />
+            Rules and procedure for <br />its implementation.
+          </button>
         </div>
-        <div>
-          <h5>text 5-6 words</h5>
-          <p>contact us and etc....:</p>
+        <div class="flex flex-row justify-center w-3xs space-x-24 mt-6">
+          <p class="font-intro-book font-normal text-[#432f24]">
+            Contact details: <br />
+            Russia, Republic of Ingushetia,<br />
+            Magas
+          </p>
+          <p class="font-intro-book font-normal text-[#432f24]">
+            Contact Us: <br />Mobile: +7 988 088 20 75 WhatsApp: +7 988 088 20
+            75<br />
+            Email: info@alquranmagas.ru
+          </p>
         </div>
       </section>
     </main>
