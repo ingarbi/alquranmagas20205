@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /assets/
+Disallow: 
+Disallow: 
+Sitemap: https://alquranmagas.ru/sitemap.xml
