@@ -1,7 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
-Disallow: /assets/
-Disallow: 
-Disallow: 
+Disallow: /assets/ 
 Sitemap: https://alquranmagas2025.ru/sitemap.xml
