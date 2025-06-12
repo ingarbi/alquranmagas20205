@@ -34,20 +34,24 @@
   </head>
   <body>
     <!-- <div
-      class="absolute top-[285px] right-[190px] bg-[#442507]/70 rounded-l-xl align-center h-16 w-[516px] z-1"
+      class="absolute top-[285px] right-[190px] bg-[#442507]/70 rounded-l-xl align-center h-16 w-[516px] z-1" 
     ></div> -->
 
     <main
-      class="max-w-6xl mx-auto bg-[url(/images/BGimage.png)] bg-contain bg-no-repeat min-h-screen flex flex-col sm:px-6 lg:px-8 mt-8"
+      class="max-w-6xl mx-auto bg-[url(/images/BGimage.png)] border-2 border-solid border-[#916646] rounded-3xl bg-cover bg-no-repeat bg-top flex flex-col sm:px-6 lg:px-8 lg:mt-8"
     >
-      <section class="flex flex-row justify-evenly space-x-10 pt-16 px-8">
-        <div class="flex flex-col justify-center items-center">
+      <section
+        class="flex flex-col lg:flex-row lg:justify-evenly items-center lg:items-start text-center lg:text-left lg:space-x-10 pt-4 lg:pt-16"
+      >
+        <div class="flex flex-col justify-center items-center mb-8 lg:mb-0">
           <img
             src="/images/logo.png"
             alt="AlQuran Magas Logo"
-            class="w-32 h-42 mb-4"
+            class="w-24 lg:w-32 h-auto lg:h-[200px] mb-2 lg:mb-4"
           />
-          <h2 class="font-messiri font-bold text-2xl text-[#342a1f]">
+          <h2
+            class="font-messiri font-bold text-xl lg:text-2xl text-[#342a1f] mt-3"
+          >
             Al Quran Magas
           </h2>
         </div>
@@ -56,28 +60,39 @@
             II International Competition of Reciters <br />
             of The Holy Quran
           </div>
-          <div class="font-messiri font-normal text-2xl tracking-wide my-1">
+          <div
+            class="font-messiri font-normal text-lg lg:text-2xl tracking-wide my-2 lg:my-1"
+          >
             In memory of the first Mufti of Ingushetia <br />
             Evloev Sulumbek Shakhbotovich
           </div>
-          <div class="flex flex-row py-8 text-center items-end">
-            <h1
-              class="font-big-shoulders font-black text-7xl text-[#442507] text-end mr-2"
+          <div
+            class="flex flex-col lg:flex-row py-8 text-center items-center lg:items-end space-y-4 lg:space-y-0"
+          >
+            <div
+              class="flex flex-row items-center justify-center space-x-3 lg:space-x-0"
             >
-              16-18
-            </h1>
-            <h1
-              class="font-intro-book font-semibold text-[#5b4433] tracking-[.25em] mr-3"
-            >
-              AUGUST <br />
-              <span
-                class="font-big-shoulders font-black text-5xl text-[#442507] tracking-normal text-end"
-                >2025</span
+              <div
+                class="font-big-shoulders font-black text-6xl lg:text-7xl text-[#442507] lg:mr-2"
               >
-            </h1>
-            <div class="mb-2 relative z-3 bg-[#442507]/70 rounded-xl align-center h-16 w-[300px]">
+                16-18
+              </div>
+
+              <div
+                class="font-intro-book font-semibold text-[#5b4433] tracking-[.25em] lg:mr-3"
+              >
+                AUGUST <br />
+                <span
+                  class="font-big-shoulders font-black text-4xl lg:text-5xl text-[#442507] tracking-normal"
+                  >2025</span
+                >
+              </div>
+            </div>
+            <div
+              class="bg-[#442507]/70 rounded-xl h-auto w-full max-w-xs lg:w-[300px] lg:ml-2 p-2"
+            >
               <p
-                class="font-intro-book font-normal text-left text-[#f5efe2] text-lg leading-5 ml-2 p-2 z-3"
+                class="font-intro-book font-normal text-center text-[#f5efe2] text-base lg:text-lg leading-5"
               >
                 Republic of Ingushetia, Magas <br />2 categories:
                 <span class="text-white underline">Hifz and Qiraat</span>
@@ -86,40 +101,50 @@
           </div>
         </div>
       </section>
-      <section class="flex flex-row">
+      <section class="flex flex-row justify-center lg:justify-start">
         <p
-          class="font-intro-book ml-[4.0em] font-semibold text-[#432f24] leading-5 tracking-wider text-xl"
+          class="font-intro-book lg:ml-[2.75em] font-normal lg:font-semibold text-[#432f24] leading-5 tracking-wider text-sm lg:text-xl text-center lg:text-left w-[350px] lg:w-auto"
         >
-          Charity fund "Vochal" (Brotherhood) together with the Ministry of
-          External Relations,<br />
+          Charity fund "Vochal" (Brotherhood)
+          <br class="inline sm:hidden" />together with the Ministry of External
+          Relations,<br class="hidden lg:inline" />
           National Policy, Press and Information of the Republic of Ingushetia.
         </p>
       </section>
-      <section>
-        <div class="flex flex-row justify-center w-3xs space-x-24 mt-10">
+      <section class="mt-6 lg:mt-10">
+        <div
+          class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-24"
+        >
           <button
-            class="bg-[#432f24] font-intro-book font-normal tracking-wide text-[#f6ead7] rounded-2xl p-3 text-left text-lg outline outline-2 outline-offset-[-5px] outline-[#f6ead7]"
+            class="group w-full max-w-sm lg:w-auto bg-[#432f24] font-intro-book font-normal tracking-wide text-[#f6ead7] rounded-2xl p-3 text-left text-base lg:text-lg outline outline-2 outline-offset-[-5px] outline-[#f6ead7] transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-[#ad7245] hover:outline-[#d4a46b]"
           >
-            International Holy Quran Award<br /><span class="text-[#d4a46b]"
+            International Holy Quran Award<br /><span class="text-[#d4a46b] group-hover:text-white transition-colors duration-300"
               >Registration Form</span
             >
           </button>
           <button
-            class="bg-[#432f24] font-intro-book font-normal tracking-wider text-[#f6ead7] rounded-2xl p-3 text-left text-sm outline outline-2 outline-offset-[-5px] outline-[#f6ead7] pr-16"
+            class="w-full max-w-sm lg:w-auto bg-[#432f24] font-intro-book font-normal tracking-wider text-[#f6ead7] rounded-2xl p-3 text-left text-sm outline outline-2 outline-offset-[-5px] outline-[#f6ead7] lg:pr-16 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-[#ad7245] hover:outline-[#d4a46b]"
           >
             All details about the competition.<br />
             Rules and procedure for <br />its implementation.
           </button>
         </div>
-        <div class="flex flex-row justify-around w-3xs mt-6 ml-24">
-          <p class="font-intro-book font-normal text-[#432f24] leading-5 ">
+        <div
+          class="flex flex-col lg:flex-row justify-center items-top lg:justify-around space-y-6 lg:space-y-0 mt-0 lg:mt-6 lg:ml-24 text-center lg:text-left"
+        >
+          <p
+            class="hidden lg:inline-flex lg:font-intro-book font-normal text-[#432f24] leading-5"
+          >
             Contact details: <br />
             Russia, Republic of Ingushetia,<br />
             Magas
           </p>
-          <p class="font-intro-book font-normal text-[#432f24] leading-5 mr-2">
-            Contact Us: <br />Mobile: +7 988 088 20 75 WhatsApp: +7 988 088 20
-            75<br />
+          <p
+            class="font-intro-book font-normal text-[#432f24] leading-5 lg:mr-2"
+          >
+            Contact Us: <br />Mobile: +7 988 088 20 75
+            <br class="lg:md:hidden" />
+            WhatsApp: +7 988 088 20 75<br />
             Email: info@alquranmagas.ru
             <br />
             <!-- Whatsapp -->
@@ -128,7 +153,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
                 viewBox="0 0 448 512"
-                class="inline mt-3"
+                class="inline mt-1 mb-2"
               >
                 <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
                 <path
@@ -136,27 +161,28 @@
                 />
               </svg>
             </span>
-            
+
             <!-- Instagram -->
             <span class="[&>svg]:h-5 [&>svg]:w-5 inline mr-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
-                viewBox="0 0 448 512" class="inline mt-3"
+                viewBox="0 0 448 512"
+                class="inline mt-1 mb-2"
               >
                 <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
                 <path
                   d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
                 />
-              </svg> </span
-            >
+              </svg>
+            </span>
             <!-- Youtube -->
             <span class="[&>svg]:h-5 [&>svg]:w-5 inline">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
                 viewBox="0 0 576 512"
-                class="inline mt-3"
+                class="inline mt-1 mb-2"
               >
                 <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
                 <path
