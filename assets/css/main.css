@@ -9,3 +9,58 @@ body {
    color: #333;
 }
 
+.header-container {
+  display: flex;
+  justify-content:flex-end; /* лого слева, языки справа */
+  align-items: center; /* выравнивание по вертикали */
+  padding: 8px;
+}
+
+
+.lang-switcher a {
+  color: #666;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 2px 0px;
+  position: relative;
+}
+
+.lang-switcher a:hover {
+  color: #000;
+}
+
+.lang-switcher a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 5px;
+  right: 5px;
+  height: 1px;
+  background-color: #000;
+}
+
+
+.copyright-text {
+  color: #555; /* Основной текст серый */
+  font-size: 10px;
+}
+
+.copyright-text a {
+  color: #555; /* Ссылка темнее основного текста */
+  font-weight: 700; /* Можно добавить жирность */
+  font-size: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  .copyright-text {
+    font-size: 12px; /* Еще меньше на мобильных */
+  }
+  .copyright-text a {
+    font-size: 12px; /* Еще меньше на мобильных */
+  }
+
+
+}
