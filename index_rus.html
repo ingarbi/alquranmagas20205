@@ -81,14 +81,14 @@
       }
     </script>
   </head>
-  <body>
+  <body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#f2e9de] to-[#c7b9a3] p-4">
     <main
-      class="max-w-6xl mx-auto bg-[url(/images/BGimage.png)] border-2 border-solid border-[#916646] rounded-3xl bg-cover bg-no-repeat bg-top flex flex-col sm:px-6 lg:pb-4 lg:px-8 lg:mt-8"
+      class="max-w-6xl w-full mx-auto bg-[url(/images/BGimage.png)] border-2 border-[#916646] rounded-3xl bg-cover bg-no-repeat bg-center flex flex-col sm:px-6 lg:pb-4 lg:px-8"
     >
-        <!-- ========== Language Switcher Start ========== -->
-          <div class="w-full flex justify-end px-4 pt-4 lg:px-0 lg:pt-0">
-              <div class="font-messiri font-bold text-lg space-x-2">
-                  <!-- Active Language: English -->
+        <!-- Language Switcher Start -->
+      <div class="w-full flex justify-end px-4 pt-4 lg:px-0 lg:pt-0">
+        <div class="font-messiri font-bold text-lg space-x-2">
+          <!-- Active Language: English -->
                   <a href="index.html" class="text-[#5b4433] hover:text-[#d4a46b] transition-colors duration-300" >English</a>
                   
                   <!-- Separator -->
@@ -96,9 +96,9 @@
                   
                   <!-- Inactive Language: Arabic -->
                   <a href="#" class="text-[#d4a46b] pointer-events-none" aria-current="page">Русский</a>
-              </div>
-          </div>
-          <!-- ========== Language Switcher End ========== -->
+        </div>
+      </div>
+      <!-- Language Switcher End -->
       <section
         class="flex flex-col lg:flex-row lg:justify-evenly items-center lg:items-start text-center lg:text-left lg:space-x-10 pt-4 lg:pt-8"
       >
@@ -179,7 +179,7 @@
             target="_blank"
             rel="noopener noreferrer">
             <button
-              class="group w-full max-w-sm lg:w-auto bg-[#432f24] font-intro-book font-normal tracking-wide text-[#f6ead7] rounded-2xl p-3 text-left text-base lg:text-lg outline outline-2 outline-offset-[-5px] outline-[#f6ead7] transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-[#ad7245] hover:outline-[#d4a46b]"
+              class="group w-2xs lg:w-auto bg-[#432f24] font-intro-book font-normal tracking-wide text-[#f6ead7] rounded-2xl p-3 text-left text-base lg:text-lg outline-2 outline-offset-[-5px] outline-[#f6ead7] transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-[#ad7245] hover:outline-[#d4a46b]"
               >
               Международный конкурс Корана<br /><span class="text-[#d4a46b] group-hover:text-white transition-colors duration-300"
                 >Заявка на участие</span>
@@ -191,7 +191,7 @@
             target="_blank"
             rel="noopener noreferrer">
             <button
-              class="w-full max-w-sm lg:w-auto bg-[#432f24] font-intro-book font-normal tracking-wider text-[#f6ead7] rounded-2xl p-3 text-left text-sm outline outline-2 outline-offset-[-5px] outline-[#f6ead7] lg:pr-16 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-[#ad7245] hover:outline-[#d4a46b]"
+              class="w-2xs lg:w-auto bg-[#432f24] font-intro-book font-normal tracking-wider text-[#f6ead7] rounded-2xl p-3 text-left text-sm outline outline-2 outline-offset-[-5px] outline-[#f6ead7] lg:pr-16 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-[#ad7245] hover:outline-[#d4a46b]"
             >
               Вся информация о конкурсе.<br />
               Регламент и процедура <br />проведения.
@@ -209,12 +209,13 @@
             Магас
           </p>
           <p
-            class="font-intro-book font-normal text-[#432f24] lg:ml-16 leading-5 lg:mr-2"
+            class="font-intro-book font-normal mt-2 lg:mt-0 text-[#432f24]  lg:ml-16 leading-5 lg:mr-2"
           >
             Наши контакты: <br />
             <a href="tel:+79380067921" target="_blank" rel="noopener noreferrer">
               Телефон: +7 938 006 79 21
             </a>
+            <br class="inline lg:hidden"/>
             <a href="https://wa.me/79380067921" target="_blank" rel="noopener noreferrer">
               WhatsApp: +7 938 006 79 21
             </a><br />
