@@ -1,5 +1,4 @@
 /*! tailwindcss v4.1.10 | MIT License | https://tailwindcss.com */
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family&Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -51,7 +50,6 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --font-messiri: "El Messiri", "sans-serif";
   }
 }
 @layer base {
@@ -227,8 +225,8 @@
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
   }
-  .mb-2 {
-    margin-bottom: calc(var(--spacing) * 2);
+  .mb-1 {
+    margin-bottom: calc(var(--spacing) * 1);
   }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
@@ -242,6 +240,12 @@
   .inline {
     display: inline;
   }
+  .table {
+    display: table;
+  }
+  .h-\[7\.5px\] {
+    height: 7.5px;
+  }
   .h-auto {
     height: auto;
   }
@@ -254,6 +258,9 @@
   .w-24 {
     width: calc(var(--spacing) * 24);
   }
+  .w-44 {
+    width: calc(var(--spacing) * 44);
+  }
   .w-\[350px\] {
     width: 350px;
   }
@@ -265,6 +272,12 @@
   }
   .max-w-xs {
     max-width: var(--container-xs);
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -321,6 +334,10 @@
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -338,8 +355,15 @@
     --tw-gradient-position: to bottom right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[radial-gradient\(ellipse_at_center\,rgba\(52\,42\,31\,0\.6\)_0\%\,transparent_70\%\)\] {
+    background-image: radial-gradient(ellipse at center,rgba(52,42,31,0.6) 0%,transparent 70%);
+  }
   .bg-\[url\(\/images\/BGimage\.png\)\] {
     background-image: url(/images/BGimage.png);
+  }
+  .from-\[\#beb1a1\] {
+    --tw-gradient-from: #beb1a1;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .from-\[\#f2e9de\] {
     --tw-gradient-from: #f2e9de;
@@ -387,9 +411,6 @@
   }
   .text-left {
     text-align: left;
-  }
-  .font-messiri {
-    font-family: var(--font-messiri);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -485,6 +506,9 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .opacity-90 {
+    opacity: 90%;
   }
   .outline {
     outline-style: var(--tw-outline-style);
@@ -619,9 +643,9 @@
       margin-bottom: calc(var(--spacing) * 0);
     }
   }
-  .lg\:mb-4 {
+  .lg\:mb-1 {
     @media (width >= 64rem) {
-      margin-bottom: calc(var(--spacing) * 4);
+      margin-bottom: calc(var(--spacing) * 1);
     }
   }
   .lg\:ml-2 {
@@ -667,6 +691,11 @@
   .lg\:inline-flex {
     @media (width >= 64rem) {
       display: inline-flex;
+    }
+  }
+  .lg\:h-\[7\.5px\] {
+    @media (width >= 64rem) {
+      height: 7.5px;
     }
   }
   .lg\:h-\[200px\] {
@@ -874,11 +903,6 @@
       }
     }
   }
-}
-@font-face {
-  font-family: "Intro Book";
-  font-display: swap;
-  src: url(".././fonts/Intro/Intro-Book.ttf") format("ttf");
 }
 @property --tw-space-y-reverse {
   syntax: "*";

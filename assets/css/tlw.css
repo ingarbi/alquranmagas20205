@@ -1,15 +1,1 @@
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family&Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
 @import "tailwindcss";
-
-@font-face {
-  font-family: "Intro Book";
-  font-display: swap;
-  src: url(".././fonts/Intro/Intro-Book.ttf") format("ttf");
-}
-
-@theme {
-  --font-messiri: "El Messiri", "sans-serif";
-  --big-shoulders: "Big Shoulders", "sans-serif";
-  --intro-book: "Intro Book", "sans-serif";
-  --intro-black: "Intro Black", "sans-serif";
-}
