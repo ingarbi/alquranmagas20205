@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
-    extend: {},
-  },
+       extend: {
+         fontFamily: {
+           'intro-book': ['Intro Book', 'sans-serif'],
+         },
+       },
+     },
   plugins: [],
 }

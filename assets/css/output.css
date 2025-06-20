@@ -1,5 +1,5 @@
 /*! tailwindcss v4.1.10 | MIT License | https://tailwindcss.com */
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family&Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -876,15 +876,9 @@
   }
 }
 @font-face {
-  font-family: "Bw Gradual";
-  src: url("./assets/fonts/Bw-Gradual-Regular/BwGradual-Regular.woff2") format("woff2"), url("./assets/fonts/Bw-Gradual-Regular/BwGradual-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: Calistoga;
+  font-family: "Intro Book";
   font-display: swap;
-  src: url("/calistoga.woff2") format("woff2");
+  src: url(".././fonts/Intro/Intro-Book.ttf") format("ttf");
 }
 @property --tw-space-y-reverse {
   syntax: "*";
