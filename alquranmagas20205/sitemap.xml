@@ -1,0 +1,39 @@
+
+
+   <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- English Page -->
+  <url>
+    <loc>https://alquranmagas2025.ru/index.html</loc>
+    <lastmod>2025-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="ru"
+               href="https://alquranmagas2025.ru/index_rus.html"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://alquranmagas2025.ru/index.html"/>
+  </url>
+  
+  <!-- Russian Page -->
+  <url>
+    <loc>https://alquranmagas2025.ru/index_rus.html</loc>
+    <lastmod>2025-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://alquranmagas2025.ru/index.html"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="ru"
+               href="https://alquranmagas2025.ru/index_rus.html"/>
+  </url>
+
+</urlset>

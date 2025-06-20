@@ -18,11 +18,30 @@
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
       <!-- Styles and Scripts -->
-    <link  href="assets/css/main.css" rel="stylesheet"/>
-    <link href="assets/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700;800;900&family=Big+Shoulders+Text:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/intro-black" rel="stylesheet" />
 
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        messiri: ["El Messiri", "sans-serif"],
+                        "big-shoulders": ["Big Shoulders Text", "sans-serif"],
+                        "intro-book": ["Intro Book", "sans-serif"],
+                        "intro-black": ["Intro Black", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -48,7 +67,7 @@
         "description": "II Международный конкурс чтецов Священного Корана памяти первого муфтия Ингушетии Евлоева Суламбека Шахботовича. Мероприятие проходит в Магасе с 16 по 18 августа 2025 года и включает в себя две категории: Hifz и Tarteel.",
         "organizer": {
           "@type": "Organization",
-          "name": "Charity fund 'Voshal' (Brotherhood)",
+          "name": "Charity fund 'Vochal' (Brotherhood)",
           "url": "https://www.alquranmagas2025.ru"
         },
         "offers": {
@@ -61,17 +80,15 @@
         }
       }
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-
   </head>
-  <body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#f2e9de] to-[#c7b9a3] p-4">
+  <body>
     <main
-      class="max-w-6xl w-full mx-auto bg-[url(/images/BGimage.png)] border-2 border-[#916646] rounded-3xl bg-cover bg-no-repeat bg-center flex flex-col sm:px-6 lg:pb-4 lg:px-8"
+      class="max-w-6xl mx-auto bg-[url(/images/BGimage.png)] border-2 border-solid border-[#916646] rounded-3xl bg-cover bg-no-repeat bg-top flex flex-col sm:px-6 lg:pb-4 lg:px-8 lg:mt-8"
     >
-        <!-- Language Switcher Start -->
-      <div class="w-full flex justify-end px-4 pt-4 lg:px-0 lg:pt-0">
-        <div class="font-messiri font-bold text-lg space-x-2">
-          <!-- Active Language: English -->
+        <!-- ========== Language Switcher Start ========== -->
+          <div class="w-full flex justify-end px-4 pt-4 lg:px-0 lg:pt-0">
+              <div class="font-messiri font-bold text-lg space-x-2">
+                  <!-- Active Language: English -->
                   <a href="index.html" class="text-[#5b4433] hover:text-[#d4a46b] transition-colors duration-300" >English</a>
                   
                   <!-- Separator -->
@@ -79,9 +96,9 @@
                   
                   <!-- Inactive Language: Arabic -->
                   <a href="#" class="text-[#d4a46b] pointer-events-none" aria-current="page">Русский</a>
-        </div>
-      </div>
-      <!-- Language Switcher End -->
+              </div>
+          </div>
+          <!-- ========== Language Switcher End ========== -->
       <section
         class="flex flex-col lg:flex-row lg:justify-evenly items-center lg:items-start text-center lg:text-left lg:space-x-10 pt-4 lg:pt-8"
       >
@@ -89,12 +106,8 @@
           <img
             src="/images/logo.png"
             alt="AlQuran Magas Logo"
-            class="w-24 lg:w-32 h-auto lg:h-[200px] mb-1 lg:mb-1"
+            class="w-24 lg:w-32 h-auto lg:h-[200px] mb-2 lg:mb-4"
           />
-          <div class="w-44 h-[7.5px] lg:h-[7.5px]
-            bg-[radial-gradient(ellipse_at_center,rgba(52,42,31,0.6)_0%,transparent_70%)]
-            opacity-90">
-          </div>
           <h2
             class="font-messiri font-bold text-xl lg:text-2xl text-[#342a1f] mt-3"
           >
@@ -166,7 +179,7 @@
             target="_blank"
             rel="noopener noreferrer">
             <button
-              class="group w-2xs lg:w-auto bg-[#432f24] font-intro-book font-normal tracking-wide text-[#f6ead7] rounded-2xl p-3 text-left text-base lg:text-lg outline-2 outline-offset-[-5px] outline-[#f6ead7] transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-[#ad7245] hover:outline-[#d4a46b]"
+              class="group w-full max-w-sm lg:w-auto bg-[#432f24] font-intro-book font-normal tracking-wide text-[#f6ead7] rounded-2xl p-3 text-left text-base lg:text-lg outline outline-2 outline-offset-[-5px] outline-[#f6ead7] transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-[#ad7245] hover:outline-[#d4a46b]"
               >
               Международный конкурс Корана<br /><span class="text-[#d4a46b] group-hover:text-white transition-colors duration-300"
                 >Заявка на участие</span>
@@ -178,7 +191,7 @@
             target="_blank"
             rel="noopener noreferrer">
             <button
-              class="w-2xs lg:w-auto bg-[#432f24] font-intro-book font-normal tracking-wider text-[#f6ead7] rounded-2xl p-3 text-left text-sm outline outline-2 outline-offset-[-5px] outline-[#f6ead7] lg:pr-16 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-[#ad7245] hover:outline-[#d4a46b]"
+              class="w-full max-w-sm lg:w-auto bg-[#432f24] font-intro-book font-normal tracking-wider text-[#f6ead7] rounded-2xl p-3 text-left text-sm outline outline-2 outline-offset-[-5px] outline-[#f6ead7] lg:pr-16 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-[#ad7245] hover:outline-[#d4a46b]"
             >
               Вся информация о конкурсе.<br />
               Регламент и процедура <br />проведения.
@@ -196,13 +209,12 @@
             Магас
           </p>
           <p
-            class="font-intro-book font-normal mt-2 lg:mt-0 text-[#432f24]  lg:ml-16 leading-5 lg:mr-2"
+            class="font-intro-book font-normal text-[#432f24] lg:ml-16 leading-5 lg:mr-2"
           >
             Наши контакты: <br />
             <a href="tel:+79380067921" target="_blank" rel="noopener noreferrer">
               Телефон: +7 938 006 79 21
             </a>
-            <br class="inline lg:hidden"/>
             <a href="https://wa.me/79380067921" target="_blank" rel="noopener noreferrer">
               WhatsApp: +7 938 006 79 21
             </a><br />
