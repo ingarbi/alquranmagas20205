@@ -40,6 +40,12 @@
   font-weight: 400;
   font-style: normal;
 }
+.intro-book-lb{
+  font-family: "Intro-Book", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 .intro-book-sb{
   font-family: "Intro-Book", sans-serif;
   font-optical-sizing: auto;
