@@ -415,6 +415,9 @@
   .bg-\[url\(\/images\/BGimage\.png\)\] {
     background-image: url(/images/BGimage.png);
   }
+  .bg-\[url\(\/images\/BGimageMobile\.png\)\] {
+    background-image: url(/images/BGimageMobile.png);
+  }
   .from-\[\#beb1a1\] {
     --tw-gradient-from: #beb1a1;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -427,11 +430,20 @@
     --tw-gradient-to: #c7b9a3;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
+  .bg-auto {
+    background-size: auto;
+  }
+  .bg-contain {
+    background-size: contain;
+  }
   .bg-cover {
     background-size: cover;
   }
   .bg-center {
     background-position: center;
+  }
+  .bg-right {
+    background-position: right;
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
@@ -657,10 +669,24 @@
       }
     }
   }
+  .hover\:cursor-pointer {
+    &:hover {
+      @media (hover: hover) {
+        cursor: pointer;
+      }
+    }
+  }
   .hover\:bg-\[\#ad7245\] {
     &:hover {
       @media (hover: hover) {
         background-color: #ad7245;
+      }
+    }
+  }
+  .hover\:text-\[\#ad7245\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #ad7245;
       }
     }
   }
@@ -690,9 +716,19 @@
       display: none;
     }
   }
+  .sm\:bg-contain {
+    @media (width >= 40rem) {
+      background-size: contain;
+    }
+  }
   .sm\:px-6 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:bg-top {
+    @media (width >= 48rem) {
+      background-position: top;
     }
   }
   .md\:text-3xl {
@@ -1074,6 +1110,21 @@
         margin-inline-start: calc(calc(var(--spacing) * 48) * var(--tw-space-x-reverse));
         margin-inline-end: calc(calc(var(--spacing) * 48) * calc(1 - var(--tw-space-x-reverse)));
       }
+    }
+  }
+  .lg\:bg-\[url\(\/images\/BGimage\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(/images/BGimage.png);
+    }
+  }
+  .lg\:bg-cover {
+    @media (width >= 64rem) {
+      background-size: cover;
+    }
+  }
+  .lg\:bg-center {
+    @media (width >= 64rem) {
+      background-position: center;
     }
   }
   .lg\:px-0 {
