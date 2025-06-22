@@ -731,6 +731,11 @@
       display: none;
     }
   }
+  .sm\:bg-\[url\(\/images\/BGimageMobile\.png\)\] {
+    @media (width >= 40rem) {
+      background-image: url(/images/BGimageMobile.png);
+    }
+  }
   .sm\:bg-contain {
     @media (width >= 40rem) {
       background-size: contain;
