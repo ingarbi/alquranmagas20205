@@ -418,6 +418,9 @@
   .bg-\[url\(\/images\/BGimageMobile\.png\)\] {
     background-image: url(/images/BGimageMobile.png);
   }
+  .bg-\[url\(\/images\/BGimageMobileXS\.png\)\] {
+    background-image: url(/images/BGimageMobileXS.png);
+  }
   .from-\[\#beb1a1\] {
     --tw-gradient-from: #beb1a1;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -447,6 +450,18 @@
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
+  }
+  .object-contain {
+    object-fit: contain;
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .object-fill {
+    object-fit: fill;
+  }
+  .object-scale-down {
+    object-fit: scale-down;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
